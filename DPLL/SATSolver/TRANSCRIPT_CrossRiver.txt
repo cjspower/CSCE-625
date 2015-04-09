@@ -1,0 +1,167 @@
+CSCE-625 PROGRAMMING ASSIGNMENT 7
+JIASHI CHEN, 124004770, cjspower@email.tamu.edu
+
+example
+==================================
+./SATSolver input3.txt
+614
+120
+1: model ={}
+unit clause:T0_GRL True
+2: model ={'T0_GRL':True }
+unit clause:T7_FAR True
+3: model ={'T0_GRL':True 'T7_FAR':True }
+unit clause:T7_FXR True
+4: model ={'T0_GRL':True 'T7_FAR':True 'T7_FXR':True }
+unit clause:T7_CHR True
+5: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_FXR':True }
+unit clause:T0_GRR False
+6: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_FXR':True 'T0_GRR':False }
+unit clause:T7_CHL False
+7: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T7_FXR':True 'T0_GRR':False }
+unit clause:T0_FAL True
+8: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T7_FXR':True 'T0_GRR':False }
+unit clause:T0_FXL True
+9: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T7_FXR':True 'T0_GRR':False 'T0_FXL':True }
+unit clause:T7_FAL False
+10: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T7_FXR':True 'T0_GRR':False 'T7_FAL':False 'T0_FXL':True }
+unit clause:T0_FAR False
+11: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T7_FXR':True 'T0_GRR':False 'T7_FAL':False 'T0_FXL':True }
+unit clause:T0_MV_CH_RL False
+12: model ={'T0_GRL':True 'T7_CHR':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T7_FXR':True 'T0_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T0_FXL':True }
+unit clause:T0_MV_FA_RL False
+13: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False }
+unit clause:T0_CHL True
+14: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_CHL':True }
+pure symbol:T0_CHR False
+15: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_CHL':True }
+unit clause:T7_FXL False
+16: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_CHL':True }
+unit clause:T0_MV_FX_RL False
+17: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True }
+pure symbol:T0_FXR False
+18: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False }
+unit clause:T6_MV_CH_RL False
+19: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False }
+unit clause:T0_MV_GR_RL False
+20: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_MV_GR_RL':False }
+unit clause:T6_MV_FX_RL False
+21: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False }
+unit clause:T7_GRR True
+22: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T7_GRR':True }
+unit clause:T7_GRL False
+23: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T7_GRR':True 'T7_GRL':False }
+unit clause:T6_MV_GR_RL False
+24: model ={'T0_GRL':True 'T7_FAR':True 'T7_CHL':False 'T0_FAL':True 'T0_FAR':False 'T6_MV_CH_RL':False 'T0_MV_CH_RL':False 'T0_CHR':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T7_FXL':False 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False }
+unit clause:T6_MV_FA_RL False
+25: model ={'T0_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False }
+trying T3_GRL=True
+26: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False }
+unit clause:T3_GRR False
+27: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False }
+unit clause:T3_MV_GR_RL False
+28: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False }
+unit clause:T2_MV_GR_LR False
+29: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False }
+trying T4_MV_FX_RL=True
+30: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True }
+pure symbol:T4_MV_FA_RL False
+31: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True }
+pure symbol:T4_MV_FA_LR False
+32: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False }
+unit clause:T4_FAR True
+33: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True }
+unit clause:T5_FAL True
+34: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True }
+unit clause:T5_FAR False
+35: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False }
+unit clause:T5_MV_FX_LR False
+36: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False }
+unit clause:T4_FAL False
+37: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False 'T4_FAL':False }
+unit clause:T3_MV_FX_RL False
+38: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T3_MV_FX_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False 'T4_FAL':False }
+unit clause:T3_MV_CH_RL False
+39: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T3_MV_FX_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False 'T4_FAL':False 'T3_MV_CH_RL':False }
+unit clause:T4_MV_CH_LR False
+40: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T3_MV_FX_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T4_MV_CH_LR':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False 'T4_FAL':False 'T3_MV_CH_RL':False }
+unit clause:T4_FXR True
+41: model ={'T0_GRL':True 'T3_GRL':True 'T7_CHL':False 'T5_FAL':True 'T0_FAL':True 'T6_MV_CH_RL':False 'T3_MV_FX_RL':False 'T0_GRR':False 'T7_FAL':False 'T7_FXR':True 'T0_FXL':True 'T4_MV_CH_LR':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T6_MV_FA_RL':False 'T3_GRR':False 'T4_MV_FA_RL':False 'T0_MV_FX_RL':False 'T0_CHL':True 'T0_FXR':False 'T0_CHR':False 'T7_FAR':True 'T0_MV_GR_RL':False 'T6_MV_FX_RL':False 'T0_MV_CH_RL':False 'T0_FAR':False 'T7_GRR':True 'T7_GRL':False 'T6_MV_GR_RL':False 'T7_FXL':False 'T5_MV_FX_LR':False 'T3_MV_GR_RL':False 'T2_MV_GR_LR':False 'T4_MV_FX_RL':True 'T4_MV_FA_LR':False 'T4_FAR':True 'T5_FAR':False 'T4_FAL':False 'T3_MV_CH_RL':False 'T4_FXR':True }
+unit clause:T4_FXL False
+……
+……
+……
+……
+289: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True }
+pure symbol:T6_MV_FA_LR False
+290: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False }
+unit clause:T6_MV_FX_LR False
+291: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False }
+unit clause:T6_FXL False
+292: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_FXL':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False }
+pure symbol:T6_FXR True
+293: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_FXL':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False 'T6_FXR':True }
+unit clause:T5_MV_FX_RL False
+294: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_FXL':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_FX_RL':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False 'T6_FXR':True }
+pure symbol:T5_MV_FA_RL True
+295: model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_FXL':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_FX_RL':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False 'T6_FXR':True 'T5_MV_FA_RL':True }
+=================
+model ={'T0_GRL':True 'T3_GRL':True 'T2_MV_CH_LR':False 'T6_FXL':False 'T6_MV_CH_RL':False 'T5_CHL':True 'T0_GRR':False 'T4_GRL':True 'T7_FAL':False 'T6_FAL':True 'T1_FXL':True 'T1_MV_CH_RL':False 'T4_MV_CH_RL':False 'T7_CHR':True 'T0_MV_FA_RL':False 'T3_GRR':False 'T0_MV_FX_RL':False 'T1_MV_FA_LR':False 'T0_FAL':True 'T4_MV_FA_LR':False 'T0_FXR':False 'T5_FXR':True 'T0_CHR':False 'T4_GRR':False 'T4_FXR':True 'T7_FAR':True 'T0_MV_GR_RL':False 'T7_GRR':True 'T7_GRL':False 'T3_MV_GR_RL':False 'T0_MV_CH_RL':False 'T3_MV_GR_LR':False 'T4_MV_FX_RL':False 'T3_FAR':True 'T1_MV_GR_RL':False 'T1_GRR':False 'T6_MV_FA_RL':False 'T0_MV_GR_LR':False 'T1_CHL':False 'T0_FXL':True 'T0_FAR':False 'T6_MV_GR_RL':False 'T1_MV_CH_LR':False 'T1_FAR':True 'T2_MV_GR_LR':False 'T6_MV_FX_RL':False 'T0_MV_CH_LR':True 'T1_CHR':True 'T0_MV_FA_LR':False 'T1_FAL':False 'T0_CHL':True 'T7_CHL':False 'T1_MV_FX_LR':False 'T3_MV_CH_LR':False 'T1_MV_FX_RL':False 'T2_MV_FA_RL':False 'T2_FAL':True 'T0_MV_FX_LR':False 'T2_MV_CH_RL':False 'T5_FAR':True 'T1_FXR':False 'T2_FXR':False 'T1_MV_FA_RL':True 'T2_MV_FA_LR':False 'T2_FAR':False 'T2_MV_FX_LR':True 'T4_MV_FA_RL':False 'T4_CHL':True 'T6_GRL':False 'T4_FXL':False 'T2_CHR':True 'T1_GRL':True 'T2_GRR':False 'T2_GRL':True 'T4_CHR':False 'T2_MV_FX_RL':False 'T3_FAL':False 'T3_FXR':True 'T3_CHR':True 'T6_FAR':False 'T3_MV_FX_RL':False 'T3_MV_FX_LR':False 'T3_FXL':False 'T2_MV_GR_RL':False 'T3_MV_FA_LR':False 'T2_FXL':True 'T4_MV_GR_RL':False 'T7_FXL':False 'T3_CHL':False 'T5_MV_FX_LR':False 'T5_MV_FX_RL':False 'T5_MV_GR_LR':False 'T5_MV_FA_LR':False 'T5_MV_CH_LR':False 'T7_FXR':True 'T4_FAR':False 'T4_MV_FX_LR':False 'T2_CHL':False 'T4_FAL':True 'T3_MV_CH_RL':True 'T3_MV_FA_RL':False 'T4_MV_CH_LR':False 'T1_MV_GR_LR':False 'T5_MV_GR_RL':False 'T6_GRR':True 'T6_MV_GR_LR':False 'T4_MV_GR_LR':True 'T6_CHL':True 'T5_FAL':False 'T5_CHR':False 'T5_MV_CH_RL':False 'T5_FXL':False 'T5_GRR':True 'T5_GRL':False 'T6_CHR':False 'T6_MV_CH_LR':True 'T6_MV_FA_LR':False 'T6_MV_FX_LR':False 'T6_FXR':True 'T5_MV_FA_RL':True }
+=================
+model(only display True value) ={T0_GRL: True 
+T3_GRL: True 
+T5_CHL: True 
+T4_GRL: True 
+T6_FAL: True 
+T1_FXL: True 
+T7_CHR: True 
+T0_FAL: True 
+T5_FXR: True 
+T4_FXR: True 
+T7_FAR: True 
+T7_GRR: True 
+T3_FAR: True 
+T0_FXL: True 
+T1_FAR: True 
+T0_MV_CH_LR: True 
+T1_CHR: True 
+T0_CHL: True 
+T2_FAL: True 
+T5_FAR: True 
+T1_MV_FA_RL: True 
+T2_MV_FX_LR: True 
+T4_CHL: True 
+T2_CHR: True 
+T1_GRL: True 
+T2_GRL: True 
+T3_FXR: True 
+T3_CHR: True 
+T2_FXL: True 
+T7_FXR: True 
+T4_FAL: True 
+T3_MV_CH_RL: True 
+T6_GRR: True 
+T4_MV_GR_LR: True 
+T6_CHL: True 
+T5_GRR: True 
+T6_MV_CH_LR: True 
+T6_FXR: True 
+T5_MV_FA_RL: True 
+}
+total iteration:295
+true
+==================================
+from the model we could get and solution
+1. move chicken to right
+2. farmer return to left
+3. move fox to right
+4. move chicken back
+5. move grain to right
+6. farmer return to left
+7. move chicken right 
+
+
+
+
+
+

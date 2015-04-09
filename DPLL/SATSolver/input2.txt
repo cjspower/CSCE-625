@@ -1,0 +1,20 @@
+-a -f g
+-a -b -h
+a c 
+a -i -l
+a -k -j
+b d
+b g -n
+b -f n k
+-c k
+-c -k -i l
+c h n -m
+c l
+d -k l
+d -g l
+-g n o
+h -o -j n
+-i j
+-d -l -m
+-e m -n
+-f h i

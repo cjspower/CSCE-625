@@ -1,0 +1,6 @@
+<project name="HW2" basedir="./" default="c">
+     
+  <target name="c" depends="">
+    <javac srcdir="src" destdir="./"/>
+  </target>
+</project>
